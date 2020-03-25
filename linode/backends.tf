@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
-    bucket = var.backend_bucket
+    bucket = "churchoffoxx"
     key    = "terraform/linode/terraform.tfstate"
-    region = var.backend_region
+    region = "us-east-1"
   }
 }
