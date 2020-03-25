@@ -1,3 +1,3 @@
-authkeys = "base64_encoded_public_key"
-password = "persistent_user_password"
-username = "persistent_user_name"
+authkeys = [ "authorized_key" ]
+region = ""
+root_pass = ""

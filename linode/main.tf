@@ -1,8 +1,8 @@
 module "neko" {
   source = "git::git@github.com:frozenfoxx/terraform-neko-linode.git"
 
-  authkeys                      = var.authkeys
-  name                          = "neko"
-  password                      = var.password
-  username                      = var.username
+  authorized_keys = var.authorized_keys
+  image           = "g6-standard-1"
+  region          = var.region
+  root_pass       = var.root_pass
 }
