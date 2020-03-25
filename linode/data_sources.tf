@@ -1,9 +1,7 @@
-data "terraform_remote_state" "s3" {
-  backend = "s3"
+data "terraform_remote_state" "terraform_state" {
+  backend = "local"
 
   config {
-    bucket = "churchoffoxx"
-    key    = "terraform/linode/terraform.tfstate"
-    region = var.backend_region
+    path = "${path.module}../../terraform.tfstate"
   }
 }
