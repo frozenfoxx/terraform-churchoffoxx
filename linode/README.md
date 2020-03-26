@@ -9,12 +9,14 @@ This describes infrastructure hosted on Linode.
 # Usage
 
 ``` code
-LINODE_TOKEN=${LINODE_TOKEN} bash -c 'terraform [command]'
+rm -rf .terraform && terraform init
+TF_VAR_token=${LINODE_TOKEN} bash -c 'terraform [command]'
 ```
 
 # Files
 
 * `backends.tf`: host backends, typically for state file storage.
+* `data_sources.tf`: all data sources.
 * `main.tf`: primary execution file.
 * `main.auto.tfvars`: persistent user for access post deployment.
   * __NOTE:__ user-supplied, non-committed.
