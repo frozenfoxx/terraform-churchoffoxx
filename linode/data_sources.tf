@@ -6,11 +6,11 @@ data "linode_region" "main" {
 }
 
 data "linode_instance_type" "default" {
-  id = "g6-nanode-1"
+  id = var.type
 }
 
 data "linode_image" "ubuntu" {
-  id = "linode/ubuntu18.04"
+  id = var.image
 }
 
 data "terraform_remote_state" "terraform_state" {
