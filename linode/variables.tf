@@ -8,6 +8,16 @@ variable "image" {
   description = "Default system image to use"
 }
 
+variable "public_ssh_key" {
+  description = "SSH Public Key Fingerprint"
+  default     = "~/.ssh/id_rsa.pub"
+}
+
+variable "private_ssh_key" {
+  description = "SSH Private Key Fingerprint"
+  default     = "~/.ssh/id_rsa"
+}
+
 variable "region" {
   default = "us-central"
   description = "Location to clone instances"
@@ -16,6 +26,11 @@ variable "region" {
 variable "root_pass" {
   default = ""
   description = "Default user password"
+}
+
+variable "sshkey_label" {
+  default = "terraform"
+  description = "Label of the SSH key used for deployment"
 }
 
 variable "token" {
