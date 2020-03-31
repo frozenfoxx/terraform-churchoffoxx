@@ -4,7 +4,7 @@ resource "linode_sshkey" "terraform" {
 }
 
 module "neko" {
-  source = "git::git@github.com:frozenfoxx/terraform-neko-linode.git"
+  source = "github.com/frozenfoxx/terraform-neko-linode"
 
   authorized_keys = ["${linode_sshkey.terraform.ssh_key}"]
   image           = var.image
