@@ -13,10 +13,6 @@ data "linode_image" "ubuntu" {
   id = var.image
 }
 
-data "linode_sshkey" "terraform" {
-  label = var.sshkey_label
-}
-
 data "terraform_remote_state" "terraform_state" {
   backend = "local"
 
