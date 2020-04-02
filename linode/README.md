@@ -9,10 +9,9 @@ This describes infrastructure hosted on Linode.
 # Usage
 
 ``` code
-rm -rf .terraform && terraform init
-TF_VAR_private_ssh_key=${PATH_TO_PRIVATE_KEY} \
+$ rm -rf .terraform && terraform init
+$ TF_VAR_private_ssh_key=${PATH_TO_PRIVATE_KEY} \
   TF_VAR_public_ssh_key=${PATH_TO_PUBLIC_KEY} \
-  TF_VAR_root_pass=${ROOT_PASSWORD} \
   TF_VAR_token=${LINODE_TOKEN} \
   bash -c 'terraform [command]'
 ```
