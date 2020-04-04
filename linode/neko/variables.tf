@@ -3,14 +3,24 @@ variable "image" {
   description = "Default system image to use"
 }
 
+variable "neko_admin" {
+  default     = ""
+  description = "Administrator password access for Neko"
+}
+
+variable "neko_password" {
+  default     = ""
+  description = "Basic user password access for Neko"
+}
+
 variable "public_ssh_key" {
-  description = "SSH Public Key Fingerprint"
   default     = "~/.ssh/id_rsa.pub"
+  description = "SSH Public Key Fingerprint"
 }
 
 variable "private_ssh_key" {
-  description = "SSH Private Key"
   default     = "~/.ssh/id_rsa"
+  description = "SSH Private Key"
 }
 
 variable "region" {
