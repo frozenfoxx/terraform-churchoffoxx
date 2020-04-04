@@ -7,4 +7,4 @@ TerraForm code for deploying Church of Foxx infrastructure.
 All deployment instructions are contained within README files within each site's directory.
 
 * Linode
-  * [Neko](linode/neko/README.md)
+  * [Neko](linode/neko)
