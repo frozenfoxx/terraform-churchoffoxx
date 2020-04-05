@@ -10,8 +10,8 @@ This describes infrastructure hosted on Linode to deploy Neko.
 
 ``` code
 $ rm -rf .terraform && terraform init
-$ TF_VAR_neko_admin=${NEKO_ADMIN} \
-  TF_VAR_neko_password=${NEKO_PASSWORD} \
+$ TF_VAR_neko_password=${NEKO_PASSWORD} \
+  TF_VAR_neko_password_admin=${NEKO_PASSWORD_ADMIN} \
   TF_VAR_private_ssh_key=${PATH_TO_PRIVATE_KEY} \
   TF_VAR_public_ssh_key=${PATH_TO_PUBLIC_KEY} \
   TF_VAR_token=${LINODE_TOKEN} \

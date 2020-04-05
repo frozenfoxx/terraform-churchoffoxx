@@ -3,14 +3,14 @@ variable "image" {
   description = "Default system image to use"
 }
 
-variable "neko_admin" {
-  default     = ""
-  description = "Administrator password access for Neko"
-}
-
 variable "neko_password" {
   default     = ""
   description = "Basic user password access for Neko"
+}
+
+variable "neko_password_admin" {
+  default     = ""
+  description = "Administrator password access for Neko"
 }
 
 variable "public_ssh_key" {
