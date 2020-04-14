@@ -8,3 +8,5 @@ All deployment instructions are contained within README files within each site's
 
 * Linode
   * [Neko](linode/neko)
+* vSphere
+  * [Bootstrap](vsphere/bootstrap)
