@@ -68,16 +68,6 @@ variable "password" {
   description = "Persistent administrative user password"
 }
 
-variable "public_ssh_key" {
-  default     = "~/.ssh/id_rsa.pub"
-  description = "SSH Public Key Fingerprint"
-}
-
-variable "private_ssh_key" {
-  default     = "~/.ssh/id_rsa"
-  description = "SSH Private Key"
-}
-
 variable "template" {
   default     = "packer-source-ubuntu1804"
   description = "VM Template to clone from"
