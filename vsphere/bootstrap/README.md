@@ -12,7 +12,6 @@ This describes a vSphere boostrap server.
 $ rm -rf .terraform & terraform init
 $ TF_VAR_authkeys=${AUTHKEYS} \
   TF_VAR_password=${PASSWORD} \
-  TF_VAR_private_ssh_key=${PATH_TO_PRIVATE_KEY} \
   TF_VAR_username=${USERNAME} \
   TF_VAR_vipassword=${VIPASSWORD} \
   TF_VAR_viuser=${VIUSER} \
