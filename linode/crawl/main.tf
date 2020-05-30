@@ -12,5 +12,5 @@ module "crawl" {
   private_key         = chomp(file(var.private_ssh_key))
   region              = var.region
   root_pass           = var.root_pass
-  type                = "g6-nano-1"
+  type                = "g6-nanode-1"
 }
