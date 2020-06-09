@@ -1,0 +1,2 @@
+authorized_keys = [ "authorized_key" ]
+root_pass = ""
