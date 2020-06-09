@@ -1,5 +1,5 @@
 variable "image" {
-  default     = "linode/ubuntu18.04"
+  default     = "linode/ubuntu20.04"
   description = "Default system image to use"
 }
 
