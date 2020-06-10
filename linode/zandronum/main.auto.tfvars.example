@@ -1,2 +1,8 @@
 authorized_keys = [ "authorized_key" ]
+private_ssh_key = ""
+public_ssh_key = ""
 root_pass = ""
+token = ""
+wads_upload_dir = ""
+zandronum_config = ""
+zandronum_options = ""
