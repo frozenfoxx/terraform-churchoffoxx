@@ -15,7 +15,7 @@ $ rm -rf .terraform && terraform init
   TF_VAR_public_ssh_key=${PATH_TO_PUBLIC_KEY} \
   TF_VAR_token=${LINODE_TOKEN} \
   TF_VAR_wads_upload_dir=${PATH_TO_WADS} \
-$ TF_VAR_zandronum_config=${ZANDRONUM_CONFIG} \
+  TF_VAR_zandronum_config=${ZANDRONUM_CONFIG} \
   TF_VAR_zandronum_options=${ZANDRONUM_OPTIONS} \
   bash -c 'terraform [command]'
 ```
