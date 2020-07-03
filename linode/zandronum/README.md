@@ -4,8 +4,9 @@ This describes infrastructure hosted on Linode to deploy Zandronum.
 
 # Requirements
 
-* [Linode personal access token](https://cloud.linode.com/profile/tokens)
+* [Linode personal access token](https://cloud.linode.com/profile/tokens).
 * A path to a directory containing all files to be uploaded to `/data/wads`.
+* GCP GCS bucket for state file storage.
 
 # Usage
 
