@@ -1,3 +1,15 @@
+# GCP variables
+variable "gcpproject" {
+  default     = "churchoffoxx-net"
+  description = "GCP Project to use for the backend storage"
+}
+
+variable "gcpregion" {
+  default     = ""
+  description = "GCP Region to use for backend storage"
+}
+
+# Instance variables
 variable "image" {
   default     = "linode/ubuntu20.04"
   description = "Default system image to use"
