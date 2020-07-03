@@ -12,6 +12,7 @@ This describes infrastructure hosted on Linode to deploy Zandronum.
 
 ``` code
 $ rm -rf .terraform && terraform init
+  GOOGLE_APPLICATION_CREDENTIALS=${PATH_TO_JSON} \
   TF_VAR_private_ssh_key=${PATH_TO_PRIVATE_KEY} \
   TF_VAR_public_ssh_key=${PATH_TO_PUBLIC_KEY} \
   TF_VAR_token=${LINODE_TOKEN} \
