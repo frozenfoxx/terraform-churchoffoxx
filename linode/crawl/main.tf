@@ -6,11 +6,12 @@ resource "linode_sshkey" "terraform" {
 module "crawl" {
   source = "github.com/frozenfoxx/terraform-crawl-linode"
 
-  authorized_keys     = ["${linode_sshkey.terraform.ssh_key}"]
-  image               = var.image
-  name                = "crawl"
-  private_key         = chomp(file(var.private_ssh_key))
-  region              = var.region
-  root_pass           = var.root_pass
-  type                = "g6-nanode-1"
+  authorized_keys          = ["${linode_sshkey.terraform.ssh_key}"]
+  image                    = var.image
+  name                     = "crawl"
+  private_key              = chomp(file(var.private_ssh_key))
+  region                   = var.region
+  traefik_admin_htpassword = var.traefik_admin_htpassword
+  traefik_admin_username   = var.traefik_admin_username
+  type                     = var.type
 }
