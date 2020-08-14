@@ -1,4 +1,8 @@
+domain = ""
 private_ssh_key = ""
 public_ssh_key = ""
 root_pass = ""
 token = ""
+traefik_acme_email = ""
+traefik_admin_htpassword = ""
+traefik_admin_username = ""

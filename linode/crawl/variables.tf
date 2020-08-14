@@ -1,3 +1,8 @@
+variable "domain" {
+  default     = ""
+  description = "Domain to attach to for Let's Encrypt and Traefik"
+}
+
 variable "image" {
   default     = "linode/ubuntu20.04"
   description = "Default system image to use"
@@ -31,6 +36,21 @@ variable "sshkey_label" {
 variable "token" {
   default     = ""
   description = "Linode API token"
+}
+
+variable "traefik_acme_email" {
+  default     = ""
+  description = "Email used for Lets Encrypt SSL certificate generation"
+}
+
+variable "traefik_admin_htpassword" {
+  default     = ""
+  description = "traefik admin password, ht-password encrypted"
+}
+
+variable "traefik_admin_username" {
+  default     = "admin"
+  description = "traefik admin user"
 }
 
 variable "type" {
