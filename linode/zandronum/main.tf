@@ -1,4 +1,4 @@
-resource "linode_sshkey" "terraform" {
+resource "linode_sshkey" "terraform-zandronum" {
   label   = var.sshkey_label
   ssh_key = chomp(file(var.public_ssh_key))
 }
