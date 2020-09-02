@@ -6,7 +6,7 @@ resource "linode_sshkey" "terraform-zandronum" {
 module "zandronum" {
   source = "github.com/frozenfoxx/terraform-zandronum-linode"
 
-  authorized_keys = ["${linode_sshkey.terraform.ssh_key}"]
+  authorized_keys = ["${linode_sshkey.terraform-zandronum.ssh_key}"]
   config          = var.zandronum_server_config
   image           = var.image
   name            = "zandronum"

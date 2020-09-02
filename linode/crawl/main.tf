@@ -6,7 +6,7 @@ resource "linode_sshkey" "terraform-crawl" {
 module "crawl" {
   source = "github.com/frozenfoxx/terraform-crawl-linode"
 
-  authorized_keys          = ["${linode_sshkey.terraform.ssh_key}"]
+  authorized_keys          = ["${linode_sshkey.terraform-crawl.ssh_key}"]
   domain                   = var.domain
   image                    = var.image
   name                     = "crawl"
