@@ -1,4 +1,4 @@
-domain = ""
+fqdn = ""
 private_ssh_key = ""
 public_ssh_key = ""
 root_pass = ""
