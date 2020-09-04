@@ -7,7 +7,7 @@ module "crawl" {
   source = "github.com/frozenfoxx/terraform-crawl-linode"
 
   authorized_keys          = ["${linode_sshkey.terraform-crawl.ssh_key}"]
-  domain                   = var.domain
+  fqdn                     = var.fqdn
   image                    = var.image
   name                     = "crawl"
   private_key              = chomp(file(var.private_ssh_key))

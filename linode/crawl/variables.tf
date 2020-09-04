@@ -1,4 +1,4 @@
-variable "domain" {
+variable "fqdn" {
   default     = ""
   description = "Domain to attach to for Let's Encrypt and Traefik"
 }
