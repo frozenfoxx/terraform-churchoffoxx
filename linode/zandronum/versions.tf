@@ -5,7 +5,7 @@ terraform {
       source = "hashicorp/google"
     }
     linode = {
-      source = "terraform-providers/linode"
+      source = "linode/linode"
     }
   }
 }
