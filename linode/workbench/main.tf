@@ -4,7 +4,7 @@ resource "linode_sshkey" "terraform-workbench" {
 }
 
 module "workbench" {
-  source = "github.com/frozenfoxx/terraform-workbench-linux-linode"
+  source = "github.com/frozenfoxx/terraform-workbench-linode"
 
   authorized_keys          = ["${linode_sshkey.terraform-workbench.ssh_key}"]
   fqdn                     = var.fqdn
