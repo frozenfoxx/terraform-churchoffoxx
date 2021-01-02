@@ -7,7 +7,6 @@ module "workbench" {
   source = "github.com/frozenfoxx/terraform-workbench-linode"
 
   authorized_keys          = ["${linode_sshkey.terraform-workbench.ssh_key}"]
-  fqdn                     = var.fqdn
   image                    = var.image
   name                     = "workbench"
   private_key              = chomp(file(var.private_ssh_key))

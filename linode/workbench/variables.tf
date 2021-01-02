@@ -1,8 +1,3 @@
-variable "fqdn" {
-  default     = ""
-  description = "Domain to attach to for Let's Encrypt and Traefik"
-}
-
 variable "image" {
   default     = "linode/ubuntu20.04"
   description = "Default system image to use"
