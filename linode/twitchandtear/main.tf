@@ -15,4 +15,5 @@ module "twitchandtear" {
   stream_key               = var.stream_key
   target_host              = var.target_host
   type                     = var.type
+  wads_upload_dir          = var.wads_upload_dir
 }
