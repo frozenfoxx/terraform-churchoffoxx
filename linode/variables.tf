@@ -1,16 +1,6 @@
 variable "image" {
-  default     = "linode/ubuntu18.04"
+  default     = "linode/ubuntu22.04"
   description = "Default system image to use"
-}
-
-variable "neko_password" {
-  default     = ""
-  description = "Basic user password access for Neko"
-}
-
-variable "neko_password_admin" {
-  default     = ""
-  description = "Administrator password access for Neko"
 }
 
 variable "public_ssh_key" {
@@ -31,6 +21,7 @@ variable "region" {
 variable "root_pass" {
   default     = ""
   description = "Default user password"
+  sensitive   = true
 }
 
 variable "sshkey_label" {
@@ -41,6 +32,7 @@ variable "sshkey_label" {
 variable "token" {
   default     = ""
   description = "Linode API token"
+  sensitive   = true
 }
 
 variable "type" {

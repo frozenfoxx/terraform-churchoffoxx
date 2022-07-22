@@ -12,11 +12,3 @@ data "linode_instance_type" "default" {
 data "linode_image" "ubuntu" {
   id = var.image
 }
-
-data "terraform_remote_state" "terraform_state" {
-  backend = "local"
-
-  config = {
-    path = "${path.root}/.terraform/terraform.tfstate"
-  }
-}
