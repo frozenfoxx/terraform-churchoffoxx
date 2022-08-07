@@ -11,6 +11,7 @@ variable "public_ssh_key" {
 variable "private_ssh_key" {
   default     = "~/.ssh/id_rsa"
   description = "SSH Private Key"
+  sensitive   = true
 }
 
 variable "region" {
@@ -33,6 +34,11 @@ variable "token" {
   default     = ""
   description = "Linode API token"
   sensitive   = true
+}
+
+variable "traefik_acme_email" {
+  default     = ""
+  description = "Email used for Lets Encrypt SSL certificate generation"
 }
 
 variable "type" {

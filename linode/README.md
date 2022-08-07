@@ -26,6 +26,7 @@ $ bash -c 'terraform [command]'
 * `main.auto.tfvars`: automatically filled-out ENV vars.
   * __NOTE:__ user-supplied, non-committed, optional in place of ENV vars.
 * `main.auto.tfvars.example`: example file for `main.auto.tfvars`.
+* `outputs.tf`: output of a Terraform run.
 * `providers.tf`: description of all relevant providers.
 * `variables.tf`: variables file.
 
