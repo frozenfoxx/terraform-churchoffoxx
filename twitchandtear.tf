@@ -5,6 +5,7 @@ resource "linode_sshkey" "terraform-twitchandtear" {
 
 module "twitchandtear" {
   source = "github.com/frozenfoxx/terraform-twitchandtear-linode"
+  count = 0
 
   authorized_keys          = ["${linode_sshkey.terraform-twitchandtear.ssh_key}"]
   fqdn                     = var.fqdn

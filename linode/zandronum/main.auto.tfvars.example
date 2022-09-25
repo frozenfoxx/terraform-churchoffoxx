@@ -1,7 +1,0 @@
-private_ssh_key = ""
-public_ssh_key = ""
-root_pass = ""
-token = ""
-wads_upload_dir = ""
-zandronum_options = ""
-zandronum_server_config = ""
