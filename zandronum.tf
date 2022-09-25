@@ -1,5 +1,6 @@
 module "zandronum" {
   source = "github.com/frozenfoxx/terraform-zandronum-linode"
+  count = 0
 
   authorized_keys = [chomp(file(var.public_ssh_key))]
   config          = var.zandronum_server_config
